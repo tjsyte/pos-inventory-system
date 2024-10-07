@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;700;800&display=swap');
+
+body {
+    --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+
+    --teal-500: #14B8A6;
+
+    --red-100: #FEE2E2;
+    --red-500: #EF4444;
+
+    --green-100: #DCFCE7;
+    --green-300: #86EFAC;
+    --green-500: #22C55E;
+
+    --primary: #729762;
+    --primary-lighter: #93C5FD;
+    --primary-darker: #A25772;
+
+    --gray-50:  #DBDFEA;
+    --gray-100: #E7F0DC;
+    --gray-200: #ADC4CE;
+    --gray-300: #96B6C5;
+    --gray-400: #9CA3AF;
+    --gray-500: #6B7280;
+    --gray-700: #374151;
+    --color-200: #E3FEF7;
+
+    background: var(--gray-100);
+    margin: 0;
+    font-family: "Open Sans";
+    font-size: 14px;
+    color: var(--gray-700);
+}
+
+.card {
+    transition: background-color 0.3s ease;
+    background-color: #424769;
+    box-shadow: var(--shadow);
+    color: #fff;
+    margin: auto;
+}
+
+.card:hover {
+    background-color: #7077A1;
+}
+
+.card-header {
+    padding: 16px;
+    border-bottom: 1px solid var(--gray-400);
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 1.25em;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control input, 
+.form-control select {
+    background-color: #fff;
+    margin-top: 4px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #6B7280;
+}
+
+.form-control input:focus,
+.form-control select:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.btn {
+    font-weight: 500;
+    padding: 8px 16px;
+    background-color: var(--gray-100);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-outlined{
+    background-color: var(--primary);
+    border: 1px solid var(--gray-400);
+    color: #fff;
+}
+
+.btn-outlined:hover{
+    background-color: var(--primary-darker);
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    transition: background-color 0.3s ease;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-darker);
+}
+
+.alert {
+    border: 1px solid var(--gray-400);
+    color: var(--gray-400);
+    padding: 8px;
+    border-radius: 5px;
+    margin: 8px 0;
+}
+
+.alert-error {
+    background-color: var(--red-100);
+    border-color: var(--red-500);
+    color: var(--red-500);
+}
+
+.alert-success {
+    background-color: var(--green-100);
+    border-color: var(--green-500);
+    color: var(--green-500);
+}
